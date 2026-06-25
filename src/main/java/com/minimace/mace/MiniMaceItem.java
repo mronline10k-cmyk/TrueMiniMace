@@ -39,7 +39,7 @@ public class MiniMaceItem {
         List<String> loreStrings = plugin.getConfig().getStringList("item.lore");
         if (!loreStrings.isEmpty()) {
             List<Component> lore = loreStrings.stream()
-                .map(s -> Component.text(s.replace('&', '§')))
+                .map(s -> (Component) Component.text(s.replace('&', '§')))
                 .toList();
             meta.lore(lore);
         }
