@@ -1,0 +1,58 @@
+# TrueMiniMace Configuration
+
+item:
+  # The name of the item (supports color codes with &)
+  name: "&4&lMini Mace"
+  # Lore lines (supports color codes)
+  lore:
+    - "&7A smaller, lighter version of the Mace"
+    - "&cFall damage scales with distance"
+    - "&cWind burst on critical hit"
+  
+  # Base attack damage (in hearts, vanilla mace is 7)
+  base-damage: 6.0
+  
+  # Attack speed (vanilla mace is 1.6, slower than sword)
+  attack-speed: 1.6
+  
+  # Durability (vanilla mace is 250)
+  durability: 250
+  
+  # Unbreakable: false
+  unbreakable: false
+
+mechanics:
+  # Fall distance multiplier for damage (vanilla is roughly 1.5 per block)
+  fall-damage-multiplier: 1.5
+  
+  # Max bonus damage from falling (in hearts)
+  max-bonus-damage: 20.0
+  
+  # Blocks you must fall to trigger critical hit
+  min-fall-distance: 1.5
+  
+  # Wind burst launch power (vanilla mace feels like ~1.5)
+  wind-burst-power: 1.5
+  
+  # Wind burst upward power
+  wind-burst-upward: 0.8
+  
+  # Wind burst forward power (based on player's look direction)
+  wind-burst-forward: 0.6
+  
+  # Cooldown between wind bursts (in ticks, 20 = 1 second)
+  wind-burst-cooldown: 10
+  
+  # Whether to spawn particles on wind burst
+  particles: true
+  
+  # Whether to play sound on wind burst
+  sounds: true
+
+# Custom crafting recipe
+crafting:
+  enabled: true
+  recipe:
+    - [BREEZE_ROD, BREEZE_ROD, BREEZE_ROD]
+    - [HEAVY_CORE, IRON_INGOT, HEAVY_CORE]
+    - [BREEZE_ROD, BREEZE_ROD, BREEZE_ROD]

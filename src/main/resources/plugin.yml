@@ -1,0 +1,19 @@
+name: TrueMiniMace
+version: 1.0.0
+main: com.minimace.mace.TrueMiniMace
+api-version: '1.21'
+author: BloodboundDev
+description: A real MiniMace that works like the vanilla mace - fall damage scaling, wind burst, and proper size.
+
+commands:
+  minimace:
+    description: Give yourself the True MiniMace
+    usage: /minimace [player]
+    permission: minimace.give
+
+permissions:
+  minimace.give:
+    default: op
+  minimace.use:
+    default: true
+    description: Allows using the MiniMace (no permission needed for basic use)
